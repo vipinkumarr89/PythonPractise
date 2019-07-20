@@ -15,17 +15,17 @@ print(list(d.keys()))
 #['john', 'peter']
 
 #3 A website requires a user to input username and password to register.
-# Write a program to check the validity of password given by user.
-# print("Enter Password here")
-# import re
-# regex = re.compile('[$#@a-zA-Z0-9]')
-# passwd=input("Enter Password here: ")
-# if len(passwd) >= 6 and len(passwd) <= 12:
-#     if regex.search(passwd) != None:
-#         print("Strong Password")
-#
-# else:
-#     print("Week password")
+#Write a program to check the validity of password given by user.
+print("Enter Password here")
+import re
+regex = re.compile('[$#@a-zA-Z0-9]')
+passwd=input("Enter Password here: ")
+if len(passwd) >= 6 and len(passwd) <= 12:
+    if regex.search(passwd) != None:
+        print("Strong Password")
+
+else:
+    print("Week password")
 
 #Output3
 #Enter Password here: Edureka123@
@@ -41,16 +41,16 @@ print (b)
 
 #5 accept alphanumeric string and print even indexed char
 
-# def evenAndNotDigit():
-#     a = input("enter alnum string: ")  # eg. H1e2l3l4o5w6o7r8l9d
-#     out=''
-#     for each in a:
-#         if a.index(each) % 2 == 0 and each.isdigit() != True:
-#             out+=each
-#
-#     print("out>>",out)
-#
-# evenAndNotDigit()
+def evenAndNotDigit():
+    a = input("enter alnum string: ")  # eg. H1e2l3l4o5w6o7r8l9d
+    out=''
+    for each in a:
+        if a.index(each) % 2 == 0 and each.isdigit() != True:
+            out+=each
+
+    print("out>>",out)
+
+evenAndNotDigit()
 
 
 #Output
@@ -58,21 +58,21 @@ print (b)
 #out>> Helloworld
 
 #6 print in reverse order
-# str=input("Enter string here to reverse: ")
-# stringlength=len(str)
-# slicedString=str[stringlength::-1]
-# print (slicedString)
+str=input("Enter string here to reverse: ")
+stringlength=len(str)
+slicedString=str[stringlength::-1]
+print (slicedString)
 
 #Output
 #Enter string here to reverse: H1e2l3l4o5w6o7r8l9d
 #d9l8r7o6w5o4l3l2e1H
 
 #7 program to count and print the numbers
-# from collections import Counter
-# a=input("enter string: ") #e.g., abcdefgabc
-# mydict=Counter(a)
-# for letter, count in mydict.most_common(len(mydict)):
-#     print('%s: %d' % (letter, count))
+from collections import Counter
+a=input("enter string: ") #e.g., abcdefgabc
+mydict=Counter(a)
+for letter, count in mydict.most_common(len(mydict)):
+    print('%s: %d' % (letter, count))
 
 #Ouptut
 # enter string: abcdefgabc
